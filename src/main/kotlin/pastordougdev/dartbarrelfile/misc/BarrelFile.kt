@@ -7,7 +7,7 @@ data class BarrelFile (
 ) {
 
     fun generateFileContents() : String {
-        var contents = "//GENERATED BARREL FILE \n";
+        var contents = "// GENERATED BARREL FILE \n";
         for(file in selectedFiles) {
             if(file != barrelFileName) {
                 contents += "export \'$file\'; \n"
